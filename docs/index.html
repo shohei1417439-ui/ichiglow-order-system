@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>受発注管理システム（買い切り・オフライン）｜中小企業向け受発注ソフト - Ichiglow</title>
+<meta name="description" content="中小企業向けの買い切り・完全オフラインの受発注管理システム。受注→発注→入荷→納品→請求を1つのWindowsアプリで完結。月額0円・¥50,000（税込）買い切り。30日間無料体験、登録不要。1〜3名規模・月300〜500件向け。">
+<meta name="keywords" content="受発注管理システム,受発注ソフト,買い切り,オフライン,中小企業,在庫管理,請求書,インボイス,Windows,月額なし,SQLite,note">
+<meta name="author" content="Ichiglow">
+<link rel="canonical" href="https://shohei1417439-ui.github.io/ichiglow-order-system/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="product">
+<meta property="og:title" content="受発注管理システム（買い切り・オフライン）｜中小企業向け - Ichiglow">
+<meta property="og:description" content="受注→発注→入荷→納品→請求を1つのWindowsアプリで完結。月額0円・¥50,000買い切り。30日間無料体験、登録不要。">
+<meta property="og:url" content="https://shohei1417439-ui.github.io/ichiglow-order-system/">
+<meta property="og:site_name" content="Ichiglow">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="受発注管理システム（買い切り・オフライン）｜中小企業向け">
+<meta name="twitter:description" content="受注→発注→入荷→納品→請求を1つのWindowsアプリで完結。月額0円・¥50,000買い切り。30日間無料体験。">
+
+<!-- 構造化データ: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ichiglow",
+  "alternateName": "イチグロ",
+  "url": "https://shohei1417439-ui.github.io/ichiglow-order-system/",
+  "email": "shohei1417439@gmail.com",
+  "slogan": "一隅を照らす",
+  "description": "中小企業・個人事業の現場で困っている方に寄り添う業務ソフトを開発する、個人開発の屋号。"
+}
+</script>
+
+<!-- 構造化データ: Product + Offer -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "受発注管理システム",
+  "alternateName": "OrderSystem",
+  "brand": { "@type": "Brand", "name": "Ichiglow" },
+  "category": "業務用ソフトウェア / 受発注管理",
+  "operatingSystem": "Windows 10, Windows 11 (64bit)",
+  "applicationCategory": "BusinessApplication",
+  "description": "中小企業向けの買い切り・完全オフラインの受発注管理システム。受注・発注・入荷・納品・請求・在庫・見積・集計を1つのWindowsアプリで完結する。月額費用なし、インターネット接続不要。1〜3名規模・月300〜500件の受発注業務向け。",
+  "url": "https://shohei1417439-ui.github.io/ichiglow-order-system/",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "スタンダード版（買い切り）",
+      "price": "50000",
+      "priceCurrency": "JPY",
+      "description": "Windowsインストーラ（exe）。買い切り・有効期限なし。アップデート無償。",
+      "url": "https://note.com/order_system_jp/n/n36bc5ac7118d",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "デベロッパー版（ソースコード付き）",
+      "price": "80000",
+      "priceCurrency": "JPY",
+      "description": "exe に加えてソースコード一式を提供。自社カスタマイズ・引き継ぎが可能。note外（メール直接取引）で対応。",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+</script>
+
+<!-- 構造化データ: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "月額費用はかかりますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "かかりません。買い切り（¥50,000・税込）で、月額・年額の追加料金はありません。" }
+    },
+    {
+      "@type": "Question",
+      "name": "インターネット環境は必要ですか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "不要です。完全にローカルで動作し、ライセンス認証もオフライン署名方式のため、初回認証もネット接続なしで完了します。" }
+    },
+    {
+      "@type": "Question",
+      "name": "複数のPC・複数人で同時に使えますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "はい。1ライセンスで同一事業所内の複数名・複数PCをカバーします。1台をサーバー役にしてアプリを起動し、他のPCはブラウザで接続するLAN共有モードで、1〜3名程度の同時編集に対応します。" }
+    },
+    {
+      "@type": "Question",
+      "name": "既存のExcelデータを取り込めますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "CSV形式でインポートできます。得意先・仕入先・商品マスター、過去受注データの一括登録に対応しています。" }
+    },
+    {
+      "@type": "Question",
+      "name": "インボイス制度に対応していますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "はい。会社情報設定に適格請求書発行事業者の登録番号を入力すると、請求書に登録番号・税抜・消費税額・税込合計が法定形式で印字されます。" }
+    },
+    {
+      "@type": "Question",
+      "name": "ソースコードは付きますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "デベロッパー版（¥80,000・税込）に一式が付きます。スタンダード版はインストーラ（exe）のみです。" }
+    },
+    {
+      "@type": "Question",
+      "name": "体験版はありますか？",
+      "acceptedAnswer": { "@type": "Answer", "text": "あります。初回起動から30日間、全機能を無料で試せます。クレジットカード登録は不要です。体験版で登録したデータはそのまま継続利用できます。" }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --primary:#ec5b13;
+    --primary-dark:#c9490a;
+    --ink:#1f2328;
+    --muted:#5b636b;
+    --line:#e6e8eb;
+    --bg:#ffffff;
+    --bg-soft:#fff8f3;
+    --bg-soft2:#faf9f8;
+    --radius:14px;
+    --maxw:980px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;color:var(--ink);background:var(--bg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic UI",Meiryo,sans-serif;
+    line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--primary-dark);}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+  /* header */
+  header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:58px;}
+  .brand{font-weight:800;letter-spacing:.02em;}
+  .brand span{color:var(--primary);}
+  .nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-size:14px;font-weight:600;}
+  .nav a:hover{color:var(--primary-dark);}
+  @media(max-width:640px){.nav{display:none;}}
+  /* hero */
+  .hero{background:linear-gradient(180deg,var(--bg-soft),#fff);padding:64px 0 48px;border-bottom:1px solid var(--line);}
+  .eyebrow{display:inline-block;background:var(--primary);color:#fff;font-size:13px;font-weight:700;padding:5px 12px;border-radius:999px;}
+  h1{font-size:clamp(28px,4.4vw,44px);line-height:1.3;margin:18px 0 14px;letter-spacing:.01em;}
+  h1 .hl{color:var(--primary);}
+  .lead{font-size:clamp(16px,2.2vw,19px);color:var(--muted);margin:0 0 26px;max-width:720px;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px;}
+  .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;border-radius:999px;padding:14px 26px;font-size:16px;transition:.15s;}
+  .btn-primary{background:var(--primary);color:#fff;box-shadow:0 6px 18px rgba(236,91,19,.28);}
+  .btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px);}
+  .btn-ghost{background:#fff;color:var(--primary-dark);border:2px solid var(--primary);}
+  .btn-ghost:hover{background:var(--bg-soft);}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--ink);}
+  .chip b{color:var(--primary-dark);}
+  /* sections */
+  section{padding:54px 0;border-bottom:1px solid var(--line);}
+  h2{font-size:clamp(22px,3vw,30px);margin:0 0 8px;letter-spacing:.01em;}
+  .sub{color:var(--muted);margin:0 0 28px;}
+  .grid{display:grid;gap:18px;}
+  .grid-2{grid-template-columns:repeat(2,1fr);}
+  .grid-3{grid-template-columns:repeat(3,1fr);}
+  @media(max-width:760px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+  .card{background:var(--bg-soft2);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
+  .card h3{margin:0 0 8px;font-size:18px;}
+  .card p{margin:0;color:var(--muted);font-size:15px;}
+  .card .ico{font-size:26px;display:block;margin-bottom:10px;}
+  /* feature list */
+  ul.feat{list-style:none;padding:0;margin:0;columns:2;column-gap:34px;}
+  ul.feat li{break-inside:avoid;padding:7px 0 7px 28px;position:relative;color:var(--ink);}
+  ul.feat li::before{content:"✓";position:absolute;left:0;top:7px;color:var(--primary);font-weight:800;}
+  @media(max-width:640px){ul.feat{columns:1;}}
+  /* table */
+  .tablewrap{overflow-x:auto;}
+  table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px;}
+  th,td{border:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top;}
+  thead th{background:var(--bg-soft);}
+  th.us{color:var(--primary-dark);}
+  td.us{background:var(--bg-soft);font-weight:700;}
+  /* pricing */
+  .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  @media(max-width:760px){.price-grid{grid-template-columns:1fr;}}
+  .plan{border:2px solid var(--line);border-radius:var(--radius);padding:26px;background:#fff;}
+  .plan.lead-plan{border-color:var(--primary);box-shadow:0 8px 24px rgba(236,91,19,.12);}
+  .plan .tag{font-size:13px;font-weight:700;color:var(--primary-dark);}
+  .plan .amt{font-size:34px;font-weight:800;margin:6px 0 2px;}
+  .plan .amt small{font-size:15px;font-weight:600;color:var(--muted);}
+  .plan p{color:var(--muted);font-size:14.5px;}
+  /* faq */
+  details{border:1px solid var(--line);border-radius:12px;padding:0 18px;margin-bottom:12px;background:#fff;}
+  details[open]{background:var(--bg-soft2);}
+  summary{cursor:pointer;font-weight:700;padding:16px 0;list-style:none;position:relative;padding-right:28px;}
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"＋";position:absolute;right:2px;top:15px;color:var(--primary);font-weight:800;}
+  details[open] summary::after{content:"－";}
+  details .ans{padding:0 0 16px;color:var(--muted);font-size:15px;}
+  /* cta band */
+  .band{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;text-align:center;}
+  .band h2{color:#fff;}
+  .band .sub{color:rgba(255,255,255,.9);}
+  .band .btn-primary{background:#fff;color:var(--primary-dark);box-shadow:0 6px 18px rgba(0,0,0,.18);}
+  .band .btn-primary:hover{background:#fff5ef;}
+  .band .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.8);}
+  .band .btn-ghost:hover{background:rgba(255,255,255,.12);}
+  /* footer */
+  footer{padding:40px 0;color:var(--muted);font-size:14px;}
+  footer a{color:var(--primary-dark);}
+  .note{font-size:13px;color:var(--muted);background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-top:18px;}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="brand">Ichiglow <span>受発注管理システム</span></div>
+    <nav class="nav">
+      <a href="#features">特徴</a>
+      <a href="#functions">機能</a>
+      <a href="#price">価格</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <span class="eyebrow">中小企業向け・買い切り型</span>
+    <h1>受注から請求まで、<br><span class="hl">1つのWindowsアプリ</span>で完結。<br>月額0円・完全オフライン。</h1>
+    <p class="lead">
+      <b>受注 → 発注 → 入荷 → 納品 → 請求</b> を一元管理する、中小企業向けの受発注管理システム。
+      月額制クラウドの継続コストが負担、ERPは多機能すぎる、Excel転記に疲れた——
+      そんな <b>1〜3名規模・月300〜500件</b> の現場のために作った、シンプルな買い切りソフトです。
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://drive.google.com/file/d/1aO_eZt8RAcXCpQadnlu5xusT4KU3Z7ro/view?usp=sharing" target="_blank" rel="noopener">▶ 体験版を無料ダウンロード（30日・登録不要）</a>
+      <a class="btn btn-ghost" href="https://note.com/order_system_jp/n/n36bc5ac7118d" target="_blank" rel="noopener">購入ページ（note）を見る</a>
+    </div>
+    <div class="chips">
+      <span class="chip"><b>¥50,000</b> 買い切り（税込）</span>
+      <span class="chip"><b>月額 0円</b></span>
+      <span class="chip">インターネット <b>不要</b></span>
+      <span class="chip">30日 <b>無料体験</b></span>
+      <span class="chip">Windows 10 / 11</span>
+    </div>
+  </div>
+</div>
+
+<!-- なぜ -->
+<section id="why">
+  <div class="wrap">
+    <h2>なぜ作ったか</h2>
+    <p class="sub">前任者の引退・保守切れ、月額SaaSのコスト負担——その「片隅の困りごと」に向き合いました。</p>
+    <p>
+      長年使っていた受発注システムの開発者が引退し、メンテナンスが止まりました。代替のSaaS型受発注ソフトを複数調べましたが、<b>月額契約が前提</b>のものが大半で、長期では無視できないランニングコストになることが分かりました。
+      「それなら自分で作った方が、結果的にシンプルで安い」——そうして生まれたのがこのシステムです。
+      会計連携や大規模EDI向けの機能はあえて省き、<b>「受発注だけ」を使い切れる</b>ことを優先しています。
+    </p>
+  </div>
+</section>
+
+<!-- 特徴 -->
+<section id="features">
+  <div class="wrap">
+    <h2>4つの特徴</h2>
+    <p class="sub">「継続課金が積み上がらない」「将来の改造が自社内で完結できる」——構造でシンプルに。</p>
+    <div class="grid grid-2">
+      <div class="card"><span class="ico">💰</span><h3>買い切り・月額0円</h3><p>¥50,000（税込）の買い切り。有効期限なし。法令改正（インボイス対応など）を含むアップデートも無償提供で、ランニングコストが発生しません。</p></div>
+      <div class="card"><span class="ico">🔌</span><h3>完全オフライン</h3><p>ローカルPCで動作。ライセンス認証もオフライン署名方式のため、初回認証すらネット接続が不要。社外にデータが出ません。</p></div>
+      <div class="card"><span class="ico">🧩</span><h3>ソースコード付きプランあり</h3><p>デベロッパー版（¥80,000・税込）はソース一式付き。帳票の自社カスタマイズや、別の開発者・AIへの引き継ぎが可能です。</p></div>
+      <div class="card"><span class="ico">⌨️</span><h3>キーボード優先設計</h3><p>ほぼ全画面が Tab + Enter だけで完結。1日100件以上の入力でも手が疲れない、現場目線の操作性です。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 機能 -->
+<section id="functions">
+  <div class="wrap">
+    <h2>主な機能</h2>
+    <p class="sub">帳票6種（注文書／出荷案内書／納品書／仕入帳／見積書／請求書）すべてA4印刷対応。</p>
+    <ul class="feat">
+      <li>受注登録・注文書発行</li>
+      <li>見積書の作成・発行</li>
+      <li>請求書（月次締め・インボイス形式で印字）</li>
+      <li>在庫管理（入出庫・履歴・不足アラート）</li>
+      <li>納品書・出荷案内書（控え付き）</li>
+      <li>仕入帳の印刷</li>
+      <li>配送スケジュール（カレンダー・納期切れアラート）</li>
+      <li>月次集計・得意先別／仕入先別／商品別・利益分析</li>
+      <li>ダッシュボード（未出荷・納期切れ・在庫不足を一目で）</li>
+      <li>CSV入出力（既存Excelデータの取り込み）</li>
+      <li>自動バックアップ（毎日1回・7世代保持）</li>
+      <li>操作ログ（誰がいつ何をしたか記録）</li>
+      <li>アプリ内ヘルプ（全14章・A4印刷対応）</li>
+      <li>オフラインのライセンス認証</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 比較 -->
+<section id="compare">
+  <div class="wrap">
+    <h2>月額型クラウド・受託開発との違い</h2>
+    <p class="sub">同じ「受発注の道具」でも、コスト構造と所有権が違います。</p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th></th><th class="us">本システム</th><th>月額型クラウド</th><th>受託開発</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>課金構造</td><td class="us">買い切り（¥50,000・税込）</td><td>月額継続課金</td><td>一括（規模で変動）</td></tr>
+          <tr><td>ランニングコスト</td><td class="us">なし</td><td>継続的に発生</td><td>なし</td></tr>
+          <tr><td>インターネット</td><td class="us">不要（完全ローカル）</td><td>必須</td><td>案件による</td></tr>
+          <tr><td>カスタマイズ</td><td class="us">デベロッパー版はソース付きで自社改造可</td><td>サービス範囲内</td><td>都度見積もり</td></tr>
+          <tr><td>提供形態</td><td class="us">Windowsインストーラ</td><td>クラウド</td><td>環境ごとに構築</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 価格 -->
+<section id="price">
+  <div class="wrap">
+    <h2>価格・ライセンス</h2>
+    <p class="sub">1ライセンス＝1事業者。同一事業所内なら利用人数・PC台数の制限なし（推奨はLAN共有モード）。</p>
+    <div class="price-grid">
+      <div class="plan lead-plan">
+        <div class="tag">いちばん人気</div>
+        <div class="amt">¥50,000 <small>（税込・買い切り）</small></div>
+        <h3 style="margin:6px 0 10px;">スタンダード版</h3>
+        <p>アプリを使いたい中小企業向け。Windowsインストーラ（exe）を提供。有効期限なし、アップデート無償。</p>
+        <div style="margin-top:16px;"><a class="btn btn-primary" href="https://note.com/order_system_jp/n/n36bc5ac7118d" target="_blank" rel="noopener">noteで購入する</a></div>
+      </div>
+      <div class="plan">
+        <div class="tag">ソースコード付き</div>
+        <div class="amt">¥80,000 <small>（税込）</small></div>
+        <h3 style="margin:6px 0 10px;">デベロッパー版</h3>
+        <p>exe に加えてソースコード一式（購入者ごとの識別情報入り）を提供。自社カスタマイズ・引き継ぎ・学習教材に。再配布・転売は不可。</p>
+        <p style="margin-top:10px;font-size:13px;">※ note の価格上限の都合により、デベロッパー版は <b>メールでの直接取引</b> で対応しています。</p>
+      </div>
+    </div>
+    <div class="note">
+      適格請求書（インボイス）について：本ソフトの販売元（Ichiglow）は消費税の<b>免税事業者</b>のため、本ソフト購入分の適格請求書（インボイス）は発行できません（領収書は発行可能）。なお、製品自体は購入者が取引先へ発行する請求書をインボイス形式で印字できます（別の話です）。
+    </div>
+  </div>
+</section>
+
+<!-- 動作環境 -->
+<section id="env">
+  <div class="wrap">
+    <h2>動作環境</h2>
+    <div class="tablewrap">
+      <table>
+        <tbody>
+          <tr><td style="width:32%;">OS</td><td>Windows 10 / Windows 11（64bit）</td></tr>
+          <tr><td>メモリ</td><td>4GB 以上</td></tr>
+          <tr><td>ディスク空き容量</td><td>500MB 以上</td></tr>
+          <tr><td>インターネット</td><td><b>不要</b>（ライセンスはオフライン署名方式。初回認証もネット接続不要）</td></tr>
+          <tr><td>同時利用</td><td>1〜3名（社内LAN内の複数PCから同時編集可。クラウド・VPN不要）</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <h2>よくあるご質問</h2>
+    <p class="sub">購入前に、ぜひ30日間の無料体験で全機能をお試しください。</p>
+    <details><summary>月額費用はかかりますか？</summary><div class="ans">かかりません。買い切り（¥50,000・税込）で、月額・年額の追加料金はありません。</div></details>
+    <details><summary>インターネット環境は必要ですか？</summary><div class="ans">不要です。完全にローカルで動作し、ライセンス認証もオフライン署名方式のため、初回認証もネット接続なしで完了します。</div></details>
+    <details><summary>複数のPC・複数人で同時に使えますか？</summary><div class="ans">はい。1ライセンスで同一事業所内の複数名・複数PCをカバーします。1台をサーバー役にしてアプリを起動し、他のPCはブラウザで接続するLAN共有モードで、1〜3名程度の同時編集に対応します。OneDrive・Dropbox等でDBファイル自体を同期する運用はデータ破損の恐れがあるため非推奨です。</div></details>
+    <details><summary>既存のExcelデータを取り込めますか？</summary><div class="ans">CSV形式でインポートできます。得意先・仕入先・商品マスター、過去受注データの一括登録に対応しています。</div></details>
+    <details><summary>インボイス制度に対応していますか？</summary><div class="ans">はい。会社情報設定に適格請求書発行事業者の登録番号を入力すると、請求書に登録番号・税抜・消費税額・税込合計が法定形式で印字されます（購入者が取引先へ発行する請求書がインボイス対応になります）。</div></details>
+    <details><summary>ソースコードは付きますか？</summary><div class="ans">デベロッパー版（¥80,000・税込）に一式が付きます。スタンダード版はインストーラ（exe）のみです。購入者本人の業務での利用・改造は自由ですが、再配布・転売は禁止です。</div></details>
+    <details><summary>PCを買い替えたらデータ・ライセンスは引き継げますか？</summary><div class="ans">はい。データフォルダの中身を新PCに移すだけで、過去データもそのまま使えます。</div></details>
+    <details><summary>30日の体験期間を過ぎたらどうなりますか？</summary><div class="ans">31日目以降はライセンス登録画面が出てアプリが一時停止しますが、後日購入してライセンスを登録すれば、データはそのまま継続利用できます。急いで購入する必要はありません。</div></details>
+    <details><summary>サポートはありますか？</summary><div class="ans">個人運営のため、「サポート」ではなく「相談窓口」として、メールで対応しています。返信は不定期で、数日〜1週間程度お時間をいただく場合があります。</div></details>
+  </div>
+</section>
+
+<!-- CTA band -->
+<section class="band">
+  <div class="wrap">
+    <h2>まずは30日間、無料で試してください</h2>
+    <p class="sub">クレジットカード登録は不要。気に入ったら購入し、体験版のデータをそのまま継続利用できます。</p>
+    <div class="cta-row" style="justify-content:center;">
+      <a class="btn btn-primary" href="https://drive.google.com/file/d/1aO_eZt8RAcXCpQadnlu5xusT4KU3Z7ro/view?usp=sharing" target="_blank" rel="noopener">▶ 体験版を無料ダウンロード</a>
+      <a class="btn btn-ghost" href="https://note.com/order_system_jp/n/n36bc5ac7118d" target="_blank" rel="noopener">購入ページ（note）</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer id="contact">
+  <div class="wrap">
+    <p><b>開発・販売元：Ichiglow（イチグロ）</b> ― 一隅を照らす。大衆向けではなく、現場の片隅で困っている方に寄り添う、個人開発の屋号です。</p>
+    <p>
+      📧 お問い合わせ・購入相談：<a href="mailto:shohei1417439@gmail.com">shohei1417439@gmail.com</a>（個人運営のため、お電話での対応は承っておりません）
+    </p>
+    <p>
+      関連リンク：
+      <a href="https://note.com/order_system_jp/n/n36bc5ac7118d" target="_blank" rel="noopener">販売ページ（note）</a> ／
+      <a href="https://note.com/order_system_jp/n/n0d91c2a22ca5" target="_blank" rel="noopener">使用許諾契約書（EULA）</a> ／
+      <a href="https://note.com/order_system_jp/n/n7b470b47a02f" target="_blank" rel="noopener">特定商取引法に基づく表記</a> ／
+      <a href="https://github.com/shohei1417439-ui/ichiglow-order-system" target="_blank" rel="noopener">GitHub</a>
+    </p>
+    <p style="margin-top:18px;font-size:13px;">© 2026 Ichiglow. 受発注管理システム（OrderSystem）.</p>
+  </div>
+</footer>
+
+</body>
+</html>
