@@ -25,6 +25,7 @@
 | 販売ページ（note・スタンダード版 ¥50,000） | https://note.com/order_system_jp/n/n36bc5ac7118d |
 | 使用許諾契約書（EULA） | https://note.com/order_system_jp/n/n0d91c2a22ca5 |
 | 特定商取引法に基づく表記 | https://note.com/order_system_jp/n/n7b470b47a02f |
+| 開発ストーリー（Qiita） | https://qiita.com/Ichiglow/items/deae459b2ef3e6019f96 |
 | お問い合わせ・購入相談 | 📧 shohei1417439@gmail.com |
 
 ---
