@@ -20,6 +20,7 @@
 
 | 内容 | リンク |
 |---|---|
+| 製品紹介ページ（公式サイト） | https://shohei1417439-ui.github.io/ichiglow-order-system/ |
 | 体験版インストーラ（無料・30日・登録不要） | https://drive.google.com/file/d/1aO_eZt8RAcXCpQadnlu5xusT4KU3Z7ro/view?usp=sharing |
 | 販売ページ（note・スタンダード版 ¥50,000） | https://note.com/order_system_jp/n/n36bc5ac7118d |
 | 使用許諾契約書（EULA） | https://note.com/order_system_jp/n/n0d91c2a22ca5 |

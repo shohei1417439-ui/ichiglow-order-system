@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shohei1417439-ui.github.io/ichiglow-order-system/sitemap.xml
