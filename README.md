@@ -21,6 +21,7 @@
 | 内容 | リンク |
 |---|---|
 | 製品紹介ページ（公式サイト） | https://shohei1417439-ui.github.io/ichiglow-order-system/ |
+| 費用比較（買い切り vs 月額クラウド・5年でいくら違う？） | https://shohei1417439-ui.github.io/ichiglow-order-system/cost-comparison.html |
 | 体験版インストーラ（無料・30日・登録不要） | https://drive.google.com/file/d/1aO_eZt8RAcXCpQadnlu5xusT4KU3Z7ro/view?usp=sharing |
 | 販売ページ（note・スタンダード版 ¥50,000） | https://note.com/order_system_jp/n/n36bc5ac7118d |
 | 使用許諾契約書（EULA） | https://note.com/order_system_jp/n/n0d91c2a22ca5 |
@@ -75,6 +76,9 @@
 | 提供形態 | Windowsインストーラ | クラウド | 環境ごとに構築 |
 
 構造的な特徴は「**継続課金が積み上がらない**」「**ソースコード付きプランがあり将来の改造が自社内で完結できる**」の2点です。
+
+▼ 5年間の総コストシミュレーション・向き不向きの詳しい比較はこちら
+https://shohei1417439-ui.github.io/ichiglow-order-system/cost-comparison.html
 
 ---
 
