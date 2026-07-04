@@ -34,17 +34,22 @@
 }
 </script>
 
-<!-- 構造化データ: Product + Offer -->
+<!-- 構造化データ: SoftwareApplication + Offer -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
+  "@type": "SoftwareApplication",
   "name": "受発注管理システム",
   "alternateName": "OrderSystem",
   "brand": { "@type": "Brand", "name": "Ichiglow" },
-  "category": "業務用ソフトウェア / 受発注管理",
+  "author": { "@type": "Organization", "name": "Ichiglow" },
   "operatingSystem": "Windows 10, Windows 11 (64bit)",
   "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "受発注管理",
+  "softwareVersion": "1.0.0",
+  "inLanguage": "ja",
+  "isAccessibleForFree": false,
+  "featureList": "受注登録・注文書発行, 見積書作成, 請求書（月次締め・インボイス形式印字）, 在庫管理, 納品書・出荷案内書, 仕入帳, 配送スケジュール（カレンダー）, 月次集計・利益分析, CSV入出力, 自動バックアップ, 操作ログ, オフラインライセンス認証",
   "description": "中小企業向けの買い切り・完全オフラインの受発注管理システム。受注・発注・入荷・納品・請求・在庫・見積・集計を1つのWindowsアプリで完結する。月額費用なし、インターネット接続不要。1〜3名規模・月300〜500件の受発注業務向け。",
   "url": "https://shohei1417439-ui.github.io/ichiglow-order-system/",
   "offers": [
@@ -223,6 +228,7 @@
       <a href="#features">特徴</a>
       <a href="#functions">機能</a>
       <a href="#price">価格</a>
+      <a href="cost-comparison.html">費用比較</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">問い合わせ</a>
     </nav>
@@ -323,6 +329,7 @@
         </tbody>
       </table>
     </div>
+    <p style="margin-top:16px;"><a href="cost-comparison.html"><b>→ 5年間でいくら違う？ 買い切り型と月額型の費用比較（詳細ページ）</b></a></p>
   </div>
 </section>
 
@@ -409,6 +416,7 @@
     </p>
     <p>
       関連リンク：
+      <a href="cost-comparison.html">費用比較（買い切り vs 月額）</a> ／
       <a href="https://note.com/order_system_jp/n/n36bc5ac7118d" target="_blank" rel="noopener">販売ページ（note）</a> ／
       <a href="https://note.com/order_system_jp/n/n0d91c2a22ca5" target="_blank" rel="noopener">使用許諾契約書（EULA）</a> ／
       <a href="https://note.com/order_system_jp/n/n7b470b47a02f" target="_blank" rel="noopener">特定商取引法に基づく表記</a> ／
