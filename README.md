@@ -29,6 +29,7 @@
 | 開発ストーリー（Qiita） | https://qiita.com/Ichiglow/items/deae459b2ef3e6019f96 |
 | 開発ストーリー（Zenn） | https://zenn.dev/ichiglow/articles/02d46ca4c1840a |
 | 現場の話・なぜ作ったか（note） | https://note.com/order_system_jp/n/n54bc2eb70672 |
+| 月額と買い切りはどっちがお得？（note） | https://note.com/order_system_jp/n/naad9b1213bdd |
 | お問い合わせ・購入相談 | 📧 shohei1417439@gmail.com |
 
 ---
